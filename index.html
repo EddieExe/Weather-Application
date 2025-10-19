@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Images/Icons/partly_cloudy.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header_container">
+        <nav class="navbar">
+            <h2 class="weather_title">Weather</h2>
+            <ul class="header_menu">
+                <li>
+                    <a class="header_link" href="#home">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6">
+                            <path
+                                d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path
+                                d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="header_link" href="https://news.google.com/search?q=weather&hl=en-IN&gl=IN&ceid=IN%3Aen">News<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 0 0 3 3h15a3 3 0 0 1-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125ZM12 9.75a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H12Zm-.75-2.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75ZM6 12.75a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5H6Zm-.75 3.75a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75ZM6 6.75a.75.75 0 0 0-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75v-3A.75.75 0 0 0 9 6.75H6Z"
+                                clip-rule="evenodd" />
+                            <path d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 0 1-3 0V6.75Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="header_link" href="#locations">Locations<svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="header_link" href="#favourite">Favourite<svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path
+                                d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="header_link" href="#contribute">Contribute<svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path
+                                d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
+                            <path fill-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search_section">
+        <div class="weather_input">
+            <input type="text" name="city" class="city_input" placeholder="Search for a city">
+            <button type="button" class="searchBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+                Search
+            </button>
+            <button type="button" class="locationBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+                Current Location
+            </button>
+        </div>
+    </section>
+
+    <section class="weather_body">
+        <!-- Left Side: Location and Date -->
+        <div class="location_info">
+            <div class="location_name">
+                City Name, Country
+            </div>
+            <div class="date">
+                Today Jan 9, 2024
+            </div>
+            <!-- Background image -->
+            <img src="./Images/Icons/partly_cloudy.png" alt="Partly Cloudy" class="background_image">
+        </div>
+
+        <!-- Right Side: Weather Details -->
+        <div class="weather_info">
+            <div class="time">
+                <b>Now</b> 2:48 AM
+            </div>
+            <div class="temperature">
+                13&deg;C
+            </div>
+            <div class="temperature_info">
+                <!-- Condition section -->
+                <div class="condition">
+                    <h3>Condition</h3>
+                    <img src="./Images/Icons/partly_cloudy.png" alt="Partly Cloudy">
+                    <p class="weather_condition">Partly Cloudy</p>
+                </div>
+                <!-- Chance of rain section -->
+                <div class="rain_chance">
+                    <h3>Chance of rain</h3>
+                    <img src="./Images/Icons/rainy.png" alt="Rainy">
+                    <p class="rain_chance_percentage">40%</p>
+                </div>
+                <!-- Wind section -->
+                <div class="wind">
+                    <h3>Wind Km/h</h3>
+                    <img src="./Images/Icons/windy.png" alt="Windy">
+                    <p class="wind_speed">6.8</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Days Forecast section -->
+    <section class="forecast">
+        <div class="day_forecast">
+            <div class="forecast_day">
+                <p class="forecast_title"> <b>5 Days</b> <br> Forecast</p>
+            </div>
+            <div class="forecast_day">
+                <p class="day">Tomorrow</p>
+                <img src="./Images/Icons/sunny.png" alt="">
+                <p class="day_weather">Sunny</p>
+                <p class="day_temperature">18&deg;C</p>
+            </div>
+            <div class="forecast_day">
+                <p class="day">Jan 12</p>
+                <img src="./Images/Icons/partly_cloudy.png" alt="">
+                <p class="day_weather">Partly Cloudy</p>
+                <p class="day_temperature">15&deg;C</p>
+            </div>
+            <div class="forecast_day">
+                <p class="day">Jan 13</p>
+                <img src="./Images/Icons/cloudy.png" alt="">
+                <p class="day_weather">Cloudy</p>
+                <p class="day_temperature">12&deg;C</p>
+            </div>
+            <div class="forecast_day">
+                <p class="day">Jan 14</p>
+                <img src="./Images/Icons/rainy.png" alt="">
+                <p class="day_weather">Rainy</p>
+                <p class="day_temperature">12&deg;C</p>
+            </div>
+            <div class="forecast_day">
+                <p class="day">Jan 15</p>
+                <img src="./Images/Icons/thunderstorm.png" alt="">
+                <p class="day_weather">Thunderstorm</p>
+                <p class="day_temperature">10&deg;C</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
